@@ -1,0 +1,122 @@
+{
+  "name": "webportal",
+  "version": "1.0.0",
+  "description": "This project will be used to show my portal site.",
+  "main": "index.jsx",
+  "scripts": {
+    "dev:server-org": "webpack-dev-server --content-base src/main/webapp/ --open --host 192.168.1.85 --port 8083",
+    "dev:server": "webpack serve  --mode development --content-base src/main/webapp/ --open --host 192.168.1.85 --port 8083",
+    "build": "webpack --mode production",
+    "develop": "webpack --mode development",
+    "prod": "webpack -p",
+    "dev": "webpack -d",
+    "express": "webpack -d && cp src/main/webapp/index.html src/main/webapp/js/build/index.html && webpack-dev-server --inline --port 9999",
+    "test": "webpack-dev-server --content-base src/main/webapp/ --open --inline --hot --port 9999",
+    "help": "webpack --help",
+    "start": "webpack-dev-server --mode development --open"
+  },
+   "babel": 
+   {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwonyounggu/webportal.git"
+  },
+  "author": "Younggu KWON",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.9.3",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.43",
+    "abcjs": "^5.6.1",
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "eslint": "^5.14.0",
+    "jquery": "^3.3.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.20",
+    "midievents": "^1.0.1",
+    "midifile": "^1.0.4",
+    "node-sass-chokidar": "^1.3.0",
+    "prismjs": "^1.15.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^4.3.4",
+    "rc-progress": "^2.2.5",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.4.3",
+    "react-bootstrap-slider": "^3.0.0",
+    "react-device-detect": "^1.6.1",
+    "react-dom": "^16.13.1",
+    "react-facebook": "^6.0.15",
+    "react-facebook-login": "^3.7.2",
+    "react-full-screen": "^0.2.2",
+    "react-google-login-component": "^0.9.3",
+    "react-loader": "^2.4.5",
+    "react-numeric-input": "^2.2.3",
+    "react-player": "^1.6.6",
+    "react-player-controls": "^0.5.20",
+    "react-pro-metronome": "^1.1.0",
+    "react-recaptcha": "^2.3.10",
+    "react-redux": "^5.0.7",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "react-spinkit": "^3.0.0",
+    "react-split-pane": "^2.0.2",
+    "react-switch": "^3.0.4",
+    "react-treebeard": "^3.2.4",
+    "reactjs-popup": "^1.3.0",
+    "redux": "^5.0.7",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^4.4.2",
+    "redux-thunk": "^2.3.0",
+    "shortid": "^2.2.8",
+    "soundfont-player": "^0.10.7",
+    "validator": "^9.4.1",
+    "waaclock": "^0.5.3",
+    "xregexp": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.1",
+    "image-webpack-loader": "^7.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "bugs": {
+    "url": "https://github.com/kwonyounggu/webportal/issues"
+  },
+  "homepage": "https://github.com/kwonyounggu/webportal#readme"
+}
